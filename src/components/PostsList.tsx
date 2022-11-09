@@ -8,10 +8,12 @@ interface PostsListsProps {
 export const PostsList = ({ postDataArray }: PostsListsProps): JSX.Element => {
   return (
     <div className="postsListWrapper">
-      {postDataArray.map((element: PostData) => {
-        <ul>
-          <Post postData={element} />
-        </ul>;
+      {postDataArray.map((element: PostData, index) => {
+        return (
+          <ul key={index}>
+            <Post postData={element} />
+          </ul>
+        );
       })}
     </div>
   );

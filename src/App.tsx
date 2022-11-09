@@ -3,7 +3,12 @@ import { MainContent } from "./components/MainContent";
 import { Footer } from "./components/Footer";
 
 function App(): JSX.Element {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <MainContent />
+    </>
+  );
 }
 
 export default App;

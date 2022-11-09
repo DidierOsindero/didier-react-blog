@@ -1,10 +1,22 @@
+import { PostsList } from "./PostsList";
+
 export interface PostData {
   title: string;
   date?: Date;
-  imagesrc: string;
+  imageData: PostImage;
   content: string;
 }
 
+interface PostImage {
+  src: string;
+  alt: string;
+}
+
+
 export const MainContent = (): JSX.Element => {
-  return <></>;
+  return (
+    <div className="mainContentWrapper">
+      <PostsList postDataArray={dataArray} />
+    </div>
+  );
 };
