@@ -13,7 +13,7 @@ export const Post = ({ postData }: PostProps): JSX.Element => {
       </div>
       <hr />
       <div className="postImageWrapper">
-        <img src={postData.imageData.src} alt={postData.imageData.alt}/>
+        <img src={postData.imageData.src} alt={postData.imageData.alt} />
       </div>
       <div className="postContentWrapper">
         <p>{postData.content}</p>

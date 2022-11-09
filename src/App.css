@@ -1,20 +1,57 @@
 /*
-HEADER
+HEADER===============
 */
 .headerWrapper {
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    background: #090127;
-    margin-bottom: 20px;
-  }
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background: #090127;
+}
 
 /*
-MAINCONTENT
+MAINCONTENT=======================
+*/
+.mainContentWrapper {
+  background-color: rgb(250, 250, 250);
+  display: flex;
+}
+
+.mainContentTopFiller {
+  height: 20px;
+}
+/*
+LEFTSIDE=======
+*/
+.leftSideWrapper {
+}
+
+/*
+RIGHTSIDE=======
 */
 
+/*
+PostsList
+*/
+
+.postsListWrapper > ul {
+  margin-top: 0px;
+}
+/*
+Post
+*/
+.postWrapper {
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid rgb(36, 36, 36);
+  border-radius: 20px;
+  background-color: white;
+}
+
+.postImageWrapper > img {
+  max-height: 500px;
+}
 
 /*
-FOOTER
+FOOTER==================
 */
