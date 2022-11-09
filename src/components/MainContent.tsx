@@ -1,4 +1,5 @@
 import { PostsList } from "./PostsList";
+import  { dataArray } from "../data/PostData";
 
 export interface PostData {
   title: string;
