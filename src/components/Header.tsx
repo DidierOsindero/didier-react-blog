@@ -1,7 +1,7 @@
 export const Header = (): JSX.Element => {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <div className="headerWrapper">
+      <h1 className="headerText">Hello</h1>
+    </div>
   );
 };
