@@ -6,7 +6,7 @@ interface PostProps {
 
 export const Post = ({ postData }: PostProps): JSX.Element => {
   return (
-    <div className="postWrapper">
+    <li className="postWrapper">
       <div className="postHeadingWrapper">
         <h3 className="postTitle">{postData.title}</h3>
         {postData.date && <i className="postDate">{postData.date}</i>}
@@ -18,6 +18,6 @@ export const Post = ({ postData }: PostProps): JSX.Element => {
       <div className="postContentWrapper">
         <p>{postData.content}</p>
       </div>
-    </div>
+    </li>
   );
 };
