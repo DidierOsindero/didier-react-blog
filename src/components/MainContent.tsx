@@ -34,7 +34,6 @@ export default interface States {
 
 //MainContent React Component
 export const MainContent = (): JSX.Element => {
-
   //Search Input State
   const [searchText, setSearchText] = useState<string>("");
 
@@ -61,7 +60,6 @@ export const MainContent = (): JSX.Element => {
   return (
     <div className="mainContentWrapper">
       <div className="leftSideWrapper">
-        <div className="mainContentTopFiller"></div>
         <PostsList postDataArray={dataArray} states={StatesStore} />
       </div>
       <div className="rightSideWrapper">
