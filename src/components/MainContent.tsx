@@ -3,13 +3,16 @@ import { dataArray } from "../data/PostData";
 import { PostsList } from "./PostsList";
 import { SearchTool } from "./SearchTool";
 
+//Interface for data about each blog post
 export interface PostData {
   title: string;
   date?: string;
+  category: "science" | "art" | "thought";
   imageData: PostImage;
   content: string;
 }
 
+//Interface for data about each blog post image
 interface PostImage {
   src: string;
   alt: string;
@@ -29,7 +32,9 @@ export default interface States {
   setIsThoughtFilter(newValue: boolean): void;
 }
 
+//MainContent React Component
 export const MainContent = (): JSX.Element => {
+
   //Search Input State
   const [searchText, setSearchText] = useState<string>("");
 

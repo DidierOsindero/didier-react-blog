@@ -8,6 +8,9 @@ export const Post = ({ postData }: PostProps): JSX.Element => {
   return (
     <div className="postWrapper">
       <div className="postHeadingWrapper">
+      <div className="postCategoryWrapper">
+        <small>{postData.category}</small>
+      </div>
         <h3 className="postTitle">{postData.title}</h3>
         {postData.date && <i className="postDate">{postData.date}</i>}
       </div>
