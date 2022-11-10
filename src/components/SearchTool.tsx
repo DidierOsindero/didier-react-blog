@@ -41,10 +41,10 @@ export const SearchTool = ({ states }: SearchToolProps): JSX.Element => {
         value={states.searchText}
         onChange={(event) => states.setSearchText(event.target.value)}
       />
-      {<button className="allButton" onClick={handleAllFilter}>All</button>}
-      {<button className="scienceButton" onClick={handleScienceFilter}>Science</button>}
-      {<button className="artButton" onClick={handleArtFilter}>Art</button>}
-      {<button className="thoughtButton" onClick={handleThoughtFilter}>Thought</button>}
+      {<button className="allFilterButton" onClick={handleAllFilter}>All</button>}
+      {<button className="scienceFilterButton" onClick={handleScienceFilter}>Science</button>}
+      {<button className="artFilterButton" onClick={handleArtFilter}>Art</button>}
+      {<button className="thoughtFilterButton" onClick={handleThoughtFilter}>Thought</button>}
     </div>
   );
 };
