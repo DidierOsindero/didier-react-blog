@@ -1,3 +1,6 @@
+.app {
+  background-color: rgb(250, 250, 250);
+}
 /*
 HEADER===============
 */
@@ -13,8 +16,6 @@ HEADER===============
 MAINCONTENT=======================
 */
 .mainContentWrapper {
-  background-color: rgb(250, 250, 250);
-  display: flex;
 }
 
 .mainContentTopFiller {
@@ -24,11 +25,32 @@ MAINCONTENT=======================
 LEFTSIDE=======
 */
 .leftSideWrapper {
+  float: left;
+  width: 70%;
 }
 
 /*
 RIGHTSIDE=======
 */
+.rightSideWrapper {
+  float: right;
+  width: 30%;
+}
+
+.searchToolWrapper {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.searchTool {
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+.searchTool:hover {
+  border: 2px solid blue;
+  border-radius: 7px;
+}
 
 /*
 PostsList
@@ -48,6 +70,10 @@ Post
   background-color: white;
 }
 
+.postWrapper:hover {
+  border: 2px solid #2400a5;
+}
+
 .postImageWrapper > img {
   max-height: 500px;
 }
@@ -55,3 +81,16 @@ Post
 /*
 FOOTER==================
 */
+
+.footerWrapper {
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background: #090127;
+  clear: both;
+}
+.footerText {
+  margin: 0px;
+}
