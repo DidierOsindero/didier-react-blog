@@ -1,4 +1,5 @@
 import { PostData } from "./MainContent";
+import { toTitleCase } from "../utils/toTitleCase";
 
 interface PostProps {
   postData: PostData;
@@ -9,7 +10,7 @@ export const Post = ({ postData }: PostProps): JSX.Element => {
     <div className="postWrapper">
       <div className="postHeadingWrapper">
       <div className="postCategoryWrapper">
-        <small>{postData.category}</small>
+        <small>{toTitleCase(postData.category)}</small>
       </div>
         <h3 className="postTitle">{postData.title}</h3>
         {postData.date && <i className="postDate">{postData.date}</i>}
