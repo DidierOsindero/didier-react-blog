@@ -14,9 +14,24 @@ export const PostsList = ({
   return (
     <div className="postsListWrapper">
       {postDataArray
-        .filter((postData) =>
-          postData.title.toLowerCase().includes(states.searchText.toLowerCase())
-        )
+        .filter((postData) => {
+
+          //checking conditions for each postData - filter by search and category
+          const isMatchingSearch = postData.title.toLowerCase().includes(states.searchText.toLowerCase());
+          const isScienceCategory = postData.category === "science";
+          const isArtCategory = postData.category === "art";
+          const isThoughtCategory = postData.category === "thought";
+          
+          if (states.isScienceFilter) {
+            return isScienceCategory && isMatchingSearch;
+          } else if (states.isArtFilter) {
+            return isArtCategory && isMatchingSearch;
+          } else if (states.isThoughtFilter) {
+            return isThoughtCategory && isMatchingSearch;
+          } else {
+            return isMatchingSearch;
+          }
+        })
         .map((element: PostData, index) => {
           return (
             <ul key={index}>
