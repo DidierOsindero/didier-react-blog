@@ -32,7 +32,7 @@ export const Post = ({ postData }: PostProps): JSX.Element => {
         {isPostClicked ? (
           <p>{postData.content}</p>
         ) : (
-          <em>Click Anywhere To Read More...</em>
+          <small>Click To Read More...</small>
         )}
       </div>
     </div>
