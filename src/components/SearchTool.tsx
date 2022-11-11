@@ -20,7 +20,7 @@ export const SearchTool = ({ states }: SearchToolProps): JSX.Element => {
   };
   const handleScienceFilter = () => {
     states.setIsAllFilter(false);
-    states.setIsScienceFilter(prev => !prev);
+    states.setIsScienceFilter((prev) => !prev);
     states.setIsArtFilter(false);
     states.setIsThoughtFilter(false);
   };
@@ -28,7 +28,7 @@ export const SearchTool = ({ states }: SearchToolProps): JSX.Element => {
   const handleArtFilter = () => {
     states.setIsAllFilter(false);
     states.setIsScienceFilter(false);
-    states.setIsArtFilter(prev => !prev);
+    states.setIsArtFilter((prev) => !prev);
     states.setIsThoughtFilter(false);
   };
 
@@ -36,7 +36,7 @@ export const SearchTool = ({ states }: SearchToolProps): JSX.Element => {
     states.setIsAllFilter(false);
     states.setIsScienceFilter(false);
     states.setIsArtFilter(false);
-    states.setIsThoughtFilter(prev => !prev);
+    states.setIsThoughtFilter((prev) => !prev);
   };
 
   return (
@@ -71,5 +71,3 @@ export const SearchTool = ({ states }: SearchToolProps): JSX.Element => {
     </div>
   );
 };
-
-
