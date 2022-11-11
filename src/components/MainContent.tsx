@@ -34,9 +34,9 @@ export default interface States {
 
 //MainContent React Component
 export const MainContent = (): JSX.Element => {
+  
   //Search Input State
   const [searchText, setSearchText] = useState<string>("");
-
   //Filter Button States
   const [isAllFilter, setIsAllFilter] = useState<boolean>(true);
   const [isScienceFilter, setIsScienceFilter] = useState<boolean>(false);

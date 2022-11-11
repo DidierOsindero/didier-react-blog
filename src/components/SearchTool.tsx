@@ -65,3 +65,5 @@ export const SearchTool = ({ states }: SearchToolProps): JSX.Element => {
     </div>
   );
 };
+
+
