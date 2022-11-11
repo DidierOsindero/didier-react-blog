@@ -102,16 +102,20 @@ Post
   border: 2px solid rgb(36, 36, 36);
 }
 
+.postWrapper:hover .postCategoryWrapper{
+  color: rgb(0, 57, 156);
+}
+
+.postCategoryWrapper {
+  color: #acacacfd;
+}
+
 .postImageWrapper > img {
   max-height: 500px;
 }
 
 .postContentWrapper {
   font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-.postCategoryWrapper {
-  color: #acacacfd;
 }
 
 /*
