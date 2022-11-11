@@ -3,6 +3,12 @@ import States from "./MainContent";
 interface SearchToolProps {
   states: States;
 }
+//useReducer -- custom hook
+/*
+setFilter is a "setState" function passed down from a parent component. 
+If I want to pass this down to be used with state rendering syntax (prex => prev+1) 
+as opposed to just passing in a value  
+*/
 
 export const SearchTool = ({ states }: SearchToolProps): JSX.Element => {
   //Filter handler Functions
@@ -14,7 +20,7 @@ export const SearchTool = ({ states }: SearchToolProps): JSX.Element => {
   };
   const handleScienceFilter = () => {
     states.setIsAllFilter(false);
-    states.setIsScienceFilter(true);
+    states.setIsScienceFilter(prev => !prev);
     states.setIsArtFilter(false);
     states.setIsThoughtFilter(false);
   };
@@ -22,7 +28,7 @@ export const SearchTool = ({ states }: SearchToolProps): JSX.Element => {
   const handleArtFilter = () => {
     states.setIsAllFilter(false);
     states.setIsScienceFilter(false);
-    states.setIsArtFilter(true);
+    states.setIsArtFilter(prev => !prev);
     states.setIsThoughtFilter(false);
   };
 
@@ -30,7 +36,7 @@ export const SearchTool = ({ states }: SearchToolProps): JSX.Element => {
     states.setIsAllFilter(false);
     states.setIsScienceFilter(false);
     states.setIsArtFilter(false);
-    states.setIsThoughtFilter(true);
+    states.setIsThoughtFilter(prev => !prev);
   };
 
   return (

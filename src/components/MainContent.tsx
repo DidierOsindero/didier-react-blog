@@ -21,15 +21,15 @@ interface PostImage {
 //Interface for States to be passed down to child components
 export default interface States {
   searchText: string;
-  setSearchText(newText: string): void;
+  setSearchText: React.Dispatch<React.SetStateAction<string>>;
   isAllFilter: boolean;
-  setIsAllFilter(newValue: boolean): void;
+  setIsAllFilter: React.Dispatch<React.SetStateAction<boolean>>;
   isScienceFilter: boolean;
-  setIsScienceFilter(newValue: boolean): void;
+  setIsScienceFilter: React.Dispatch<React.SetStateAction<boolean>>;
   isArtFilter: boolean;
-  setIsArtFilter(newValue: boolean): void;
+  setIsArtFilter: React.Dispatch<React.SetStateAction<boolean>>;
   isThoughtFilter: boolean;
-  setIsThoughtFilter(newValue: boolean): void;
+  setIsThoughtFilter: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 //MainContent React Component
