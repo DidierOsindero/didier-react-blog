@@ -1,7 +1,10 @@
 .app {
   background-color: rgb(250, 250, 250);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #212121;
 }
+
+
 /*
 HEADER===============
 */
@@ -10,7 +13,7 @@ HEADER===============
   font-size: 20px;
   text-align: center;
   color: white;
-  background: #090127;
+  background: #110050;
 }
 
 /*
@@ -59,9 +62,9 @@ searchTool
 }
 
 .filterButtonWrapper > button {
-  background-color: #090127;
+  background-color: #110050;
   color: rgb(250, 250, 250);
-  border: 1px solid #090127;
+  border: 1px solid #110050;
   border-radius: 10px;
   font-family: inherit;
   font-size: 15px;
@@ -114,7 +117,8 @@ Post
 }
 
 .postContentWrapper {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #393939;
 }
 
 /*
@@ -127,7 +131,7 @@ FOOTER==================
   font-size: 20px;
   text-align: center;
   color: white;
-  background: #090127;
+  background: #110050;
   clear: both;
 }
 .footerText {
