@@ -5,6 +5,7 @@ import { SearchTool } from "./SearchTool";
 
 //Interface for data about each blog post
 export interface PostData {
+  id: number;
   title: string;
   date?: string;
   category: "science" | "art" | "thought";

@@ -2,6 +2,7 @@ import { PostData } from "../components/MainContent";
 
 export const dataArray: PostData[] = [
   {
+    id: 1,
     title: "Introduction to Combinations and Permutations",
     category: "science",
     imageData: {
@@ -13,6 +14,7 @@ export const dataArray: PostData[] = [
   },
 
   {
+    id: 2,
     title: "Jazz Music as a Language",
     category: "art",
     imageData: {

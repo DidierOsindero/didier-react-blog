@@ -33,9 +33,9 @@ export const PostsList = ({
             return isMatchingSearch;
           }
         })
-        .map((element: PostData, index) => {
+        .map((element: PostData) => {
           return (
-            <ul key={index}>
+            <ul key={element.id}>
               <Post postData={element} />
             </ul>
           );
